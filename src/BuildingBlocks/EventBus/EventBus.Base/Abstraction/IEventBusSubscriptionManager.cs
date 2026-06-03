@@ -23,9 +23,9 @@ namespace EventBus.Base.Abstraction
 
         void Clear();
 
-        IEnumerable<EventBus.Base.SubManagers.SubscriptionInfo> GetHandlerForEvent<T>() where T : IntegrationEvent;
+        IEnumerable<EventBus.Base.SubManagers.SubscriptionInfo> GetHandlersForEvent<T>() where T : IntegrationEvent;
 
-        IEnumerable<EventBus.Base.SubManagers.SubscriptionInfo> GetHandlerForEvent(string eventName);
+        IEnumerable<EventBus.Base.SubManagers.SubscriptionInfo> GetHandlersForEvent(string eventName);
 
         string GetEventKey<T>();
     }
