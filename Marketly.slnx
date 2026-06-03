@@ -1,0 +1,42 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="ServiceUrls.txt" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/ApiGateways/" />
+  <Folder Name="/src/ApiGateways/WebApiGateway/">
+    <Project Path="src/ApiGateways/WebApiGateway/Web.ApiGateway/Web.ApiGateway.csproj" />
+  </Folder>
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/BuildingBlocks/EventBus/">
+    <Project Path="src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj" />
+    <Project Path="src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj" />
+    <Project Path="src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj" />
+    <Project Path="src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj" />
+  </Folder>
+  <Folder Name="/src/Clients/">
+    <Project Path="src/Clients/BlazorWebApp/WebApp/WebApp.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/BasketService/">
+    <Project Path="src/Services/BasketService/BasketService.Api/BasketService.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/CatalogService/">
+    <Project Path="src/Services/CatalogService/CatalogService.Api/CatalogService.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/IdentiyService/">
+    <Project Path="src/Services/IdentityService/IdentityService.Api/IdentityService.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/NotificationService/">
+    <Project Path="src/Services/NotificationService/NotificationService/NotificationService.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/OrderService/">
+    <Project Path="src/Services/OrderService/OrderService.Api/OrderService.Api.csproj" />
+    <Project Path="src/Services/OrderService/OrderService.Application/OrderService.Application.csproj" />
+    <Project Path="src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj" />
+    <Project Path="src/Services/OrderService/OrderService.Infrastructure/OrderService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/PaymentService/">
+    <Project Path="src/Services/PaymentService/PaymentService.Api/PaymentService.Api.csproj" />
+  </Folder>
+</Solution>
