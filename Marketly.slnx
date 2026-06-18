@@ -39,4 +39,8 @@
   <Folder Name="/src/Services/PaymentService/">
     <Project Path="src/Services/PaymentService/PaymentService.Api/PaymentService.Api.csproj" />
   </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/BuildingBlocks/">
+    <Project Path="tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj" Id="ae401fe0-67e1-40ba-9dad-0bc68eca0375" />
+  </Folder>
 </Solution>
