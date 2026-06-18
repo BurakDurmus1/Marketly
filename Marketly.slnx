@@ -41,6 +41,6 @@
   </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/BuildingBlocks/">
-    <Project Path="tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj" Id="ae401fe0-67e1-40ba-9dad-0bc68eca0375" />
+    <Project Path="EventBus.UnitTest/EventBus.UnitTest.csproj" Id="226ad802-4fd2-46ce-ace5-9112b3688a99" />
   </Folder>
 </Solution>

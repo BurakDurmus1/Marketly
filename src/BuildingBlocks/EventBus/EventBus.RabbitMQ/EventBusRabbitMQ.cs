@@ -94,7 +94,7 @@ namespace EventBus.RabbitMQ
             var eventName = typeof(T).Name;
             eventName = ProcessEventName(eventName);
 
-            if (SubsManager.HasSubscriptionForEvent(eventName))
+            if (!SubsManager.HasSubscriptionForEvent(eventName))
             {
                 if (!rabbitMQPersistentConnection.IsConnected)
                 {
@@ -110,6 +110,7 @@ namespace EventBus.RabbitMQ
                                   routingKey: eventName);
             }
             SubsManager.AddSubscription<T, TH>();
+            StartBasicConsume(eventName);
         }
 
         public override void UnSubscribe<T, TH>()
@@ -129,9 +130,17 @@ namespace EventBus.RabbitMQ
         }
         private void StartBasicConsume(string eventName)
         {
-            var consumer = new EventingBasicConsumer(consumerChannel);
-            consumer.Received += Consumer_Received;
-            consumerChannel.BasicConsume(queue: GetSubName(eventName), autoAck: false, consumer: consumer);
+            if (consumerChannel != null)
+            {
+                var consumer = new EventingBasicConsumer(consumerChannel);
+
+                consumer.Received += Consumer_Received;
+
+                consumerChannel.BasicConsume(
+                    queue: GetSubName(eventName),
+                    autoAck: false,
+                    consumer: consumer);
+            }
         }
 
         private async void Consumer_Received(object sender, BasicDeliverEventArgs e)

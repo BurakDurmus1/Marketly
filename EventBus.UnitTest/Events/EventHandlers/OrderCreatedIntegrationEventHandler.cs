@@ -10,8 +10,9 @@ namespace EventBus.UnitTest.Events.EventHandlers
 {
     public class OrderCreatedIntegrationEventHandler : IIntegrationEventHandler<OrderCreatedIntegrationEvent>
     {
-       public Task Handle(OrderCreatedIntegrationEvent @event)
+        public Task Handle(OrderCreatedIntegrationEvent @event)
         {
+            Console.WriteLine($"Order created: {@event.Id}");
             return Task.CompletedTask;
         }
     }

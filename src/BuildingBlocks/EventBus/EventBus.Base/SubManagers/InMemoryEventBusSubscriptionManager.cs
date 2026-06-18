@@ -56,7 +56,7 @@ namespace EventBus.Base.SubManagers
 
         public string GetEventKey<T>()
         {
-           string eventName = GetEventKey<T>();
+            string eventName = typeof(T).Name;
             return eventNameGetter(eventName);
         }
 

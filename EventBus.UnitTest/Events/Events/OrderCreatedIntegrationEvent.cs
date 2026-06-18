@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EventBus.UnitTest.Events.Events
 {
-    public class OrderCreatedIntegrationEvent: IntegrationEvent
+    public class OrderCreatedIntegrationEvent : IntegrationEvent
     {
         public int Id { get; set; }
 
