@@ -1,12 +1,12 @@
 # 🧩 .NET Core tabanlı mikroservis mimarisiyle geliştirilmiş bir e-ticaret altyapısı
 
 ## 🚀 Teknolojiler
-- **.NET Core 5/6/7/8** – Ana uygulama çatısı  
+- **.NET Core** – Ana uygulama çatısı  
 - **Entity Framework Core** – ORM ve veri erişimi  
 - **RabbitMQ** – Servisler arası mesajlaşma  
 - **Redis** – Cache yönetimi  
-- **PostgreSQL / SQL Server** – Veritabanı  
-- **xUnit / MSTest** – Unit test altyapısı  
+- **SQL Server** – Veritabanı  
+- **MSTest** – Unit test altyapısı  
 - **Docker** – Servislerin containerize edilmesi  
 - **Swagger** – API dokümantasyonu  
 
