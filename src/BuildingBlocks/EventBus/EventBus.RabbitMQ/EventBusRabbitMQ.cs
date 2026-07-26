@@ -65,6 +65,7 @@ namespace EventBus.RabbitMQ
             eventName = ProcessEventName(eventName);
 
             consumerChannel.ExchangeDeclare(exchange: EventBusConfig.DefaultTopicName, type: "direct");
+            
 
             var message = JsonConvert.SerializeObject(@event);
             var body = Encoding.UTF8.GetBytes(message);
@@ -78,6 +79,7 @@ namespace EventBus.RabbitMQ
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
+                consumerChannel.QueueBind(queue: GetSubName(eventName), exchange: EventBusConfig.DefaultTopicName, routingKey: eventName);
 
                 consumerChannel.BasicPublish(
                 exchange: EventBusConfig.DefaultTopicName,
