@@ -1,4 +1,17 @@
 <Solution>
+  <Folder Name="/docker-compose-files/" />
+  <Folder Name="/docker-compose-files/consul/">
+    <File Path="docker-compose-consul.yml" />
+  </Folder>
+  <Folder Name="/docker-compose-files/rabbitmq/">
+    <File Path="docker-compose-rabbitmq.yml" />
+  </Folder>
+  <Folder Name="/docker-compose-files/redis/">
+    <File Path="docker-compose-redis.yml" />
+  </Folder>
+  <Folder Name="/docker-compose-files/sqlserver/">
+    <File Path="docker-compose-sqlserver.yml" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="ServiceUrls.txt" />
   </Folder>
