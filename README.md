@@ -1,3 +1,7 @@
+🚧 Proje Durumu: Geliştirme Aşamasında
+
+Marketly aktif olarak geliştirilmektedir. Bazı servisler ve özellikler henüz tamamlanmamıştır. Projenin mimarisi ve kullanılan bileşenler geliştirme sürecinde değişebilir.
+
 # 🧩 .NET Core tabanlı mikroservis mimarisiyle geliştirilmiş bir e-ticaret altyapısı
 
 ## 🚀 Teknolojiler
